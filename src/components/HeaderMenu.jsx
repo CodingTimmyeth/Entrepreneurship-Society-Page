@@ -4,13 +4,13 @@ import { FiArrowUpRight } from "react-icons/fi";
 const HeaderMenu = () => {
   const menuItems = [
     "About",
-    "Student Busines",
+    "Student Business",
     "Blogs",
     "Meet the Team",
     "Join!",
   ];
   return (
-    <section className="border border-black rounded-md w-[95%] py-3">
+    <section className="border border-black rounded-md w-[95%]">
       {menuItems.map((item, index) => (
         <div
           key={index}

@@ -4,14 +4,14 @@ import { useState } from "react";
 import HeaderMenu from "./HeaderMenu";
 
 const Header = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(true);
 
   const handleMenuClick = () => {
     setMenu(!menu);
   };
 
   return (
-    <header className="flex flex-col justify-between items-center">
+    <header className="flex flex-col justify-between items-center mb-8">
       <section className="flex justify-between items-center mb-4">
         <h1 className="text-l text-PrimaryColor font-bold">
           CSUSM Entrepreneurship Society
