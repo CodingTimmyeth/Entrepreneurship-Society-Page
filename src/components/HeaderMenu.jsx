@@ -21,7 +21,7 @@ const HeaderMenu = () => {
   };
 
   return (
-    <section className="border border-black rounded-md w-[95%] absolute top-24 z-10 bg-white">
+    <section className="border border-black rounded-md w-[95%] absolute top-24 z-10 bg-white ">
       {menuItems.map((item, index) => (
         <div
           key={index}

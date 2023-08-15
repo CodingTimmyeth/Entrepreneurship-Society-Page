@@ -47,13 +47,17 @@ const MeetTeam = () => {
       </div>
       {teamMembers.map((person) => (
         <div
-          className="flex flex-col items-center justify-center py-4 mb-10"
+          className="flex flex-col items-center justify-center py-4 mb-10 
+          Tablet:flex-row Tablet:justify-between  Tablet:px-10 
+          "
           key={person.id}
         >
           <BsPersonBoundingBox className="text-3xl mb-5" />
-          <h1 className="font-bold text-xl">{person.name}</h1>
-          <h3 className="mb-4">{person.title}</h3>
-          <p>{person.description}</p>
+          <div className="Tablet:w-[400px] Tablet:">
+            <h1 className="font-bold text-xl Tablet:mb-3">{person.name}</h1>
+            <h3 className="mb-4">{person.title}</h3>
+            <p>{person.description}</p>
+          </div>
         </div>
       ))}
     </section>

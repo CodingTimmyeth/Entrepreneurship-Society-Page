@@ -55,9 +55,12 @@ const ClubEvents = () => {
   };
 
   return (
-    <section id="Blogs">
+    <section
+      id="Blogs"
+      className="Tablet:grid Tablet:grid-cols-2 Tablet:gap-8 Tablet:self-center"
+    >
       {events.map((item) => (
-        <div className="flex flex-col mb-8" key={item.id}>
+        <div className="flex flex-col mb-8 Tablet:w-[300px]" key={item.id}>
           <div
             className={`mb-2 h-[384px] ${item.image} bg-cover bg-center rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.4)]`}
           ></div>

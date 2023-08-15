@@ -3,7 +3,7 @@ import React from "react";
 const NewData = () => {
   return (
     <section
-      className="text-white bg-PrimaryColor rounded-xl py-10 mb-16"
+      className="text-white bg-PrimaryColor rounded-xl py-10 mb-16 Tablet:w-[82%]"
       id="Join!"
     >
       <div className="flex flex-col">
