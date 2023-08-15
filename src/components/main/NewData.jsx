@@ -2,7 +2,10 @@ import React from "react";
 
 const NewData = () => {
   return (
-    <section className="text-white bg-PrimaryColor rounded-xl py-10 mb-16">
+    <section
+      className="text-white bg-PrimaryColor rounded-xl py-10 mb-16"
+      id="Join!"
+    >
       <div className="flex flex-col">
         <div className="mb-10">
           <h1 className="text-4xl font-bold">100 Million</h1>

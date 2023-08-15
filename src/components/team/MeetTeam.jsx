@@ -37,7 +37,7 @@ const MeetTeam = () => {
     },
   ];
   return (
-    <section className="text-center text-PrimaryColor mb-16">
+    <section className="text-center text-PrimaryColor mb-16" id="Meet the Team">
       <div className="mb-10">
         <h1 className="text-2xl font-bold mb-3">Meet the Team!</h1>
         <p className="text-[15px] leading-8">

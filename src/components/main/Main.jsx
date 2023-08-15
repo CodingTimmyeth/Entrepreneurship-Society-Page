@@ -6,7 +6,7 @@ import StudentBus from "./StudentBus";
 const Main = () => {
   return (
     <main className="flex flex-col justify-center text-center text-PrimaryColor">
-      <div className="mb-14">
+      <div className="mb-14" id="About">
         <h1 className="font-semibold text-3xl mb-3 leading-9 px-1">
           The Lifestyle Of Living Your Dreams
         </h1>

@@ -2,7 +2,7 @@ import React from "react";
 
 const StudentBus = () => {
   return (
-    <section>
+    <section id="Student Business">
       <div className="mb-10">
         <h1 className="mb-3 text-2xl font-bold px-11">
           Learn About Student Businesses

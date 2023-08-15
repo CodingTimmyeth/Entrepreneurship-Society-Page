@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SlArrowDown } from "react-icons/sl";
+import { SlArrowUp } from "react-icons/sl";
 
 const ClubEvents = () => {
   const events = [
@@ -38,43 +39,49 @@ const ClubEvents = () => {
     events.map((event) => ({ id: event.id, showDescr: false }))
   );
 
+  const [open, setOpen] = useState(false);
   const handleEventClick = (eventId) => {
     setEventStates((prevStates) =>
       prevStates.map((prevState) =>
         prevState.id === eventId
-          ? { ...prevState, showDescr: !prevState.showDescr }
+          ? {
+              ...prevState,
+              showDescr: !prevState.showDescr,
+              arrow: !prevState.arrow,
+            }
           : prevState
       )
     );
   };
-  return (
-    <section>
-      <div className="mb-10">
-        <h1 className="font-bold text-2xl mb-3">About the Club</h1>
-        <p>
-          A community of aspiring entrepreneurs who share the goal of starting
-          and growing their businesses.
-        </p>
-      </div>
-      {/* Club Events */}
 
+  return (
+    <section id="Blogs">
       {events.map((item) => (
-        <div className="flex flex-col mb-8 " key={item.id}>
+        <div className="flex flex-col mb-8" key={item.id}>
           <div
             className={`mb-2 h-[384px] ${item.image} bg-cover bg-center rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.4)]`}
           ></div>
-          <div className="flex flex-col p-5 shadow-[0_4px_4px_0_rgba(0,0,0,0.4)] rounded-lg cursor-pointer">
+          <div className="flex flex-col p-5 rounded-lg cursor-pointer shadow-[0_4px_4px_0px_rgba(0,0,0,0.4)]">
             <div
-              className="flex items-center justify-between"
+              className="flex  items-center justify-between "
               onClick={() => handleEventClick(item.id)}
             >
               <p className="text-lg">{item.title}</p>
-              <SlArrowDown className="text-2xl text-black" />
+              {eventStates.find((state) => state.id === item.id).arrow ? (
+                <SlArrowUp className="text-2xl text-black" />
+              ) : (
+                <SlArrowDown className="text-2xl text-black" />
+              )}
             </div>
-            {eventStates.find((state) => state.id === item.id).showDescr && (
-              <p className="text-black text-left text-lg mt-5">
-                {item.description}
-              </p>
+            {eventStates.find((state) => state.id === item.id).showDescr ? (
+              <div className="mt-5">
+                <div className="h-[2px] w-full bg-PrimaryColor mb-5" />
+                <p className="text-black text-left text-lg">
+                  {item.description}
+                </p>
+              </div>
+            ) : (
+              console.log("Statement is false")
             )}
           </div>
         </div>
@@ -84,3 +91,5 @@ const ClubEvents = () => {
 };
 
 export default ClubEvents;
+
+//  p-3 shadow-[0_4px_4px_0_rgba(0,0,0,0.4)] rounded-lg rounded-t-none cursor-pointer

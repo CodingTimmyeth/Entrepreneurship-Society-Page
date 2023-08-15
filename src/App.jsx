@@ -17,7 +17,9 @@ function App() {
 
 export default App;
 
-// Add smooth scroll functionality
-// Menu Links has to be on top of
-// Animate toggle down event description
-// Change Icon when clicked
+// Add smooth scroll functionality ✅
+// Menu Links has to be on top ✅
+// Animate toggle down event description ✅
+// Animate toogle up event description
+// Change Icon when clicked ✅
+// Responsiveness - Tablet, Andriod, Desktop, Larger Desktops

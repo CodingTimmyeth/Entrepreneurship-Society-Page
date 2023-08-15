@@ -9,12 +9,24 @@ const HeaderMenu = () => {
     "Meet the Team",
     "Join!",
   ];
+
+  const handleMenuItem = (item) => {
+    const section = document.getElementById(item);
+    console.log(item);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <section className="border border-black rounded-md w-[95%]">
+    <section className="border border-black rounded-md w-[95%] absolute top-24 z-10 bg-white">
       {menuItems.map((item, index) => (
         <div
           key={index}
           className="flex justify-between items-center p-4 cursor-pointer"
+          onClick={() => handleMenuItem(item)}
         >
           <h3>{item}</h3>
           <FiArrowUpRight />

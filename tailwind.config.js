@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'IPad': '481px',
+      'Tablet': '768px',
+    },
     extend: {
       colors: {
         'PrimaryColor': '#002e5a',
