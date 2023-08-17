@@ -4,16 +4,19 @@ const StudentBus = () => {
   return (
     <section id="Student Business">
       <div className="mb-10">
-        <h1 className="mb-3 text-2xl font-bold px-11">
+        <h1 className="mb-3 text-2xl font-bold px-11 MiniPC:text-4xl">
           Learn About Student Businesses
         </h1>
-        <p className="px-10">
+        <p className="px-10 text-md">
           See what kinds of businesses we help students with!
         </p>
       </div>
       {/* Student Businesses */}
-      <div className="Tablet:grid Tablet:grid-cols-2 Tablet:gap-8 Tablet:self-center">
-        <div className="text-white bg-PrimaryColor rounded-xl mb-16 p-6 text-left h-fit">
+      <div
+        className="Tablet:grid Tablet:grid-cols-2 Tablet:gap-8 Tablet:justify-start MiniPC:flex MiniPC:flex-col MiniPC:items-start MiniPC:gap-8 MiniPC:self-stretch"
+        style={{ gridAutoColumns: "minmax(0, 1fr)" }}
+      >
+        <div className="text-white bg-PrimaryColor rounded-xl mb-16 p-6 text-left h-fit MiniPC:mb-0 ">
           <p className="mb-4">
             "His quality of work is excellent! I prefer Mehedi in every
             important work of design. He is working fast, clean and present
@@ -21,7 +24,7 @@ const StudentBus = () => {
           </p>
           <p className="font-bold text-xl">Kumni - Queuethehype</p>
         </div>
-        <div className="text-white bg-PrimaryColor rounded-xl mb-16 p-6 text-left">
+        <div className="text-white bg-PrimaryColor rounded-xl mb-16 p-6 text-left ">
           <p className="mb-4">
             I couldn't ask for a better Designer. Communication was 200% and
             this went above my expectations. <br /> <br />

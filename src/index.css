@@ -17,5 +17,5 @@
 }
 
 .animate-dropdown {
-    animation: animateDropdown .5s linear;
+    animation: animateDropdown 300ms linear;
 }

@@ -60,7 +60,10 @@ const ClubEvents = () => {
       className="Tablet:grid Tablet:grid-cols-2 Tablet:gap-8 Tablet:self-center"
     >
       {events.map((item) => (
-        <div className="flex flex-col mb-8 Tablet:w-[300px]" key={item.id}>
+        <div
+          className="flex flex-col mb-8 Tablet:w-[300px] MiniPC:w-[400px]"
+          key={item.id}
+        >
           <div
             className={`mb-2 h-[384px] ${item.image} bg-cover bg-center rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.4)]`}
           ></div>
@@ -77,7 +80,7 @@ const ClubEvents = () => {
               )}
             </div>
             {eventStates.find((state) => state.id === item.id).showDescr ? (
-              <div className="mt-5">
+              <div className="mt-5 animate-dropdown">
                 <div className="h-[2px] w-full bg-PrimaryColor mb-5" />
                 <p className="text-black text-left text-lg">
                   {item.description}

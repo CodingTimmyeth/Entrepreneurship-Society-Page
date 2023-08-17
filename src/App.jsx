@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Main from "./components/main/Main";
 import MeetTeam from "./components/team/MeetTeam";
 import Footer from "./components/footer/Footer";
+import Grid from "./components/Grid";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Main />
       <MeetTeam />
       <Footer />
+      {/* <Grid /> */}
     </>
   );
 }

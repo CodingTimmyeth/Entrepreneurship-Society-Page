@@ -3,10 +3,10 @@ import React from "react";
 const NewData = () => {
   return (
     <section
-      className="text-white bg-PrimaryColor rounded-xl py-10 mb-16 Tablet:w-[82%]"
+      className="text-white bg-PrimaryColor rounded-xl py-10 mb-16 Tablet:w-[82%] MiniPC:w-[500px]"
       id="Join!"
     >
-      <div className="flex flex-col">
+      <div className="flex flex-col MiniPC:text-xl">
         <div className="mb-10">
           <h1 className="text-4xl font-bold">100 Million</h1>
           <p className="mb-10">New businesses every year</p>

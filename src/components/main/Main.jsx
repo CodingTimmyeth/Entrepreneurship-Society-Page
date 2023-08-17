@@ -11,10 +11,10 @@ const Main = () => {
         id="About"
       >
         <div className="Tablet:w-[65%]">
-          <h1 className="font-semibold text-3xl mb-3 leading-9 px-1 Tablet:px-10">
+          <h1 className="font-semibold text-3xl mb-3 leading-9 px-1 Tablet:px-10 MiniPC:text-4xl MiniPC:mb-5">
             The Lifestyle Of Living Your Dreams
           </h1>
-          <p className="font-medium leading-6 px- mb-10 text-lg">
+          <p className="font-medium leading-6  mb-10 text-lg MiniPC:px-5">
             With its diverse list of members, business owners and practical
             resources the Entrepreneurship Society is the perfect place for your
             entrepreneurial goals!
