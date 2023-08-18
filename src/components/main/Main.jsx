@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <main className="flex flex-col justify-center text-center text-PrimaryColor Tablet:items-center">
       <div
-        className="mb-14 Tablet:flex Tablet:items-center Tablet:justify-center "
+        className="mb-14 Tablet:flex Tablet:items-center Tablet:justify-center Tablet:mt-5"
         id="About"
       >
         <div className="Tablet:w-[65%]">

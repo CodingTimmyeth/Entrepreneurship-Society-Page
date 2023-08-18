@@ -20,7 +20,7 @@ const NewData = () => {
   ];
   return (
     <section
-      className="text-white bg-PrimaryColor rounded-xl py-10 mb-16 Tablet:flex Tablet:py-0 text-center"
+      className="text-white bg-PrimaryColor rounded-xl py-10 mb-16 Tablet:flex Tablet:py-0 text-center Tablet:my-10"
       id="Join!"
     >
       {data.map((item) => (
