@@ -57,11 +57,11 @@ const ClubEvents = () => {
   return (
     <section
       id="Blogs"
-      className="Tablet:grid Tablet:grid-cols-2 Tablet:gap-8 Tablet:self-center"
+      className="Tablet:grid Tablet:grid-cols-2 Tablet:gap-8 Tablet:self-center BigScreens:gap-x-14"
     >
       {events.map((item) => (
         <div
-          className="flex flex-col mb-8 Tablet:w-[300px] MiniPC:w-[400px]"
+          className="flex flex-col mb-8 Tablet:w-[300px] MiniPC:w-[400px] BigScreens:w-[500px]"
           key={item.id}
         >
           <div

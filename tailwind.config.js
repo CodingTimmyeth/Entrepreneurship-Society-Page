@@ -8,7 +8,9 @@ export default {
     screens: {
       'IPad': '481px',
       'Tablet': '768px',
-      'MiniPC': '900px'
+      'MiniPC': '900px',
+      'Desktop': '1024px',
+      'BigScreens': '1440px',
     },
     extend: {
       colors: {
