@@ -30,7 +30,10 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <ClubEvents />
+      <div className="bg-red-500">
+        hi
+        <ClubEvents />
+      </div>
       <NewData />
       <StudentBus />
     </main>

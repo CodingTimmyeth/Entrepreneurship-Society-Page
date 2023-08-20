@@ -24,12 +24,12 @@ const NewData = () => {
       id="Join!"
     >
       {data.map((item) => (
-        <>
-          <div
-            className="flex flex-col items-center mb-4 Tablet:flex-row Tablet:items-center Tablet:justify-center Tablet:mb-0 Tablet:w-[33.31%] Tablet:px-10 Tablet:py-8"
-            key={item.id}
-          >
-            <div className="mb-3  Table:flex Tablet:flex-col">
+        <div
+          key={item.id}
+          className="flex flex-col items-center mb-4 Tablet:flex-row Tablet:items-center Tablet:justify-end Tablet:mb-0 Tablet:w-[33.31%] Tablet:px-4 Tablet:py-8 Tablet:mr-4"
+        >
+          <div className="Tablet:flex Tablet:justify-center Tablet:w-full py-0">
+            <div className="mb-3 Table:flex Tablet:flex-col Tablet:pr-4">
               <h1 className="text-4xl font-bold mb-2">{item.title}</h1>
               <div>
                 <p className="text-md">{item.subTitle}</p>
@@ -37,11 +37,11 @@ const NewData = () => {
             </div>
           </div>
           <div className="flex items-center justify-center mb-5 Tablet:mb-0">
-            <div className="w-[56px] h-[1px] bg-white Tablet:w-[1px] Tablet:h-[56px]"></div>
+            <div className="w-[56px] h-[1px] bg-white Tablet:w-[1px] Tablet:h-[56px] Tablet:ml-4"></div>
           </div>
-        </>
+        </div>
       ))}
-      <div className="flex flex-col items-center justify-center mb-4 p-3 Tablet:mb-0 Desktop:p-0">
+      <div className="flex flex-col items-center justify-center mb-4 px-3 Tablet:mb-0 Desktop:p-0">
         <div className="">
           <h1 className="text-4xl font-bold mb-2">305 Million</h1>
           <div>

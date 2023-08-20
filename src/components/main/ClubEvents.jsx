@@ -44,8 +44,9 @@ const ClubEvents = () => {
     return (
       <section
         id="Blogs"
-        className="Tablet:grid Tablet:grid-cols-2 Tablet:gap-8 Tablet:self-center BigScreens:gap-x-14"
+        className="Tablet:grid Tablet:grid-cols-2 Tablet:gap-8 Tablet:self-center BigScreens:gap-x-14 bg-red-500"
       >
+        Hello
         {events.map((item) => (
           <div
             className="flex flex-col mb-8 Tablet:w-[300px] MiniPC:w-[400px] BigScreens:w-[500px]"
@@ -66,7 +67,6 @@ const ClubEvents = () => {
                   <SlArrowDown className="text-2xl text-black" />
                 )}
               </div>
-              {/* {eventStates.find((state) => state.id === item.id).showDescr ? ( */}
               <div
                 className={`mt-5 ${
                   expandedId === item.id
@@ -79,8 +79,6 @@ const ClubEvents = () => {
                   {item.description}
                 </p>
               </div>
-
-              {/* )} */}
             </div>
           </div>
         ))}
