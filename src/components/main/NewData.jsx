@@ -12,11 +12,11 @@ const NewData = () => {
       title: "99.9%",
       subTitle: "Of businesses are small business",
     },
-    {
-      id: 3,
-      title: "305 Million",
-      subTitle: "people are starting or running a new businesses worldwide.",
-    },
+    // {
+    //   id: 3,
+    //   title: "305 Million",
+    //   subTitle: "people are starting or running a new businesses worldwide.",
+    // },
   ];
   return (
     <section
@@ -26,11 +26,11 @@ const NewData = () => {
       {data.map((item) => (
         <>
           <div
-            className="flex flex-col items-center mb-4 Tablet:flex-row Tablet:items-center Tablet:justify-center Tablet:mb-0 Tablet:w-[33.31%] Tablet:px-10 Tablet: py-8"
+            className="flex flex-col items-center mb-4 Tablet:flex-row Tablet:items-center Tablet:justify-center Tablet:mb-0 Tablet:w-[33.31%] Tablet:px-10 Tablet:py-8"
             key={item.id}
           >
             <div className="mb-3  Table:flex Tablet:flex-col">
-              <h1 className="text-4xl font-bold">{item.title}</h1>
+              <h1 className="text-4xl font-bold mb-2">{item.title}</h1>
               <div>
                 <p className="text-md">{item.subTitle}</p>
               </div>
@@ -41,16 +41,16 @@ const NewData = () => {
           </div>
         </>
       ))}
-      {/* <div className="bg-yellow-500 flex flex-col items-center mb-4 p-3">
-        <div className="mb-3">
-          <h1 className="text-4xl font-bold">305 Million</h1>
+      <div className="flex flex-col items-center justify-center mb-4 p-3 Tablet:mb-0 Desktop:p-0">
+        <div className="">
+          <h1 className="text-4xl font-bold mb-2">305 Million</h1>
           <div>
-            <p className="text-md">
+            <p className="text-md px-8 Tablet:px-0">
               people are starting or running a new businesses worldwide.
             </p>
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };

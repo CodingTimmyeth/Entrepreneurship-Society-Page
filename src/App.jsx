@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import Main from "./components/main/Main";
 import MeetTeam from "./components/team/MeetTeam";
 import Footer from "./components/footer/Footer";
-import Grid from "./components/Grid";
 
 function App() {
   return (
@@ -23,4 +22,4 @@ export default App;
 // Animate toggle down event description ✅
 // Animate toogle up event description
 // Change Icon when clicked ✅
-// Responsiveness - Tablet, Andriod, Desktop, Larger Desktops
+// Responsiveness - Tablet, Andriod, Desktop, Larger Desktops ✅

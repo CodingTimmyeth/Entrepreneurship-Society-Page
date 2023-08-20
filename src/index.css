@@ -19,3 +19,20 @@
 .animate-dropdown {
     animation: animateDropdown 300ms linear;
 }
+
+
+@keyframes animatePullBack {
+    from {
+        max-height: 400px;
+        opacity: 1;
+    }
+
+    to {
+        max-height: 0px;
+        opacity: 0;
+    }
+}
+
+.animate-pullback {
+    animation: animatePullBack 300ms linear;
+}

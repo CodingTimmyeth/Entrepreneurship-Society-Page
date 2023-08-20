@@ -62,9 +62,13 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <button className="bg-PrimaryColor w-fit px-6 py-2 text-white rounded-md">
+          <a
+            href="https://csusm.presence.io/organization/entrepreneurship-society"
+            className="bg-PrimaryColor w-fit px-6 py-2 text-white rounded-md"
+            target="_blank"
+          >
             Join Us!
-          </button>
+          </a>
         </section>
       </section>
       {menu ? "" : <HeaderMenu />}

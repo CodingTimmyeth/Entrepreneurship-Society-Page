@@ -35,65 +35,58 @@ const ClubEvents = () => {
     },
   ];
 
-  const [eventStates, setEventStates] = useState(
-    events.map((event) => ({ id: event.id, showDescr: false }))
-  );
+  const [expandedId, setExpandedId] = useState(null);
 
-  const [open, setOpen] = useState(false);
   const handleEventClick = (eventId) => {
-    setEventStates((prevStates) =>
-      prevStates.map((prevState) =>
-        prevState.id === eventId
-          ? {
-              ...prevState,
-              showDescr: !prevState.showDescr,
-              arrow: !prevState.arrow,
-            }
-          : prevState
-      )
+    setExpandedId((prevExpandedId) =>
+      prevExpandedId === eventId ? null : eventId
     );
-  };
-
-  return (
-    <section
-      id="Blogs"
-      className="Tablet:grid Tablet:grid-cols-2 Tablet:gap-8 Tablet:self-center BigScreens:gap-x-14"
-    >
-      {events.map((item) => (
-        <div
-          className="flex flex-col mb-8 Tablet:w-[300px] MiniPC:w-[400px] BigScreens:w-[500px]"
-          key={item.id}
-        >
+    return (
+      <section
+        id="Blogs"
+        className="Tablet:grid Tablet:grid-cols-2 Tablet:gap-8 Tablet:self-center BigScreens:gap-x-14"
+      >
+        {events.map((item) => (
           <div
-            className={`mb-2 h-[384px] ${item.image} bg-cover bg-center rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.4)]`}
-          ></div>
-          <div className="flex flex-col p-5 rounded-lg cursor-pointer shadow-[0_4px_4px_0px_rgba(0,0,0,0.4)]">
+            className="flex flex-col mb-8 Tablet:w-[300px] MiniPC:w-[400px] BigScreens:w-[500px]"
+            key={item.id}
+          >
             <div
-              className="flex  items-center justify-between "
-              onClick={() => handleEventClick(item.id)}
-            >
-              <p className="text-lg">{item.title}</p>
-              {eventStates.find((state) => state.id === item.id).arrow ? (
-                <SlArrowUp className="text-2xl text-black" />
-              ) : (
-                <SlArrowDown className="text-2xl text-black" />
-              )}
-            </div>
-            {eventStates.find((state) => state.id === item.id).showDescr ? (
-              <div className="mt-5 animate-dropdown">
+              className={`mb-2 h-[384px] ${item.image} bg-cover bg-center rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.4)]`}
+            ></div>
+            <div className="flex flex-col p-5 rounded-lg cursor-pointer shadow-[0_4px_4px_0px_rgba(0,0,0,0.4)]">
+              <div
+                className="flex  items-center justify-between "
+                onClick={() => handleEventClick(item.id)}
+              >
+                <p className="text-lg">{item.title}</p>
+                {expandedId === item.id ? (
+                  <SlArrowUp className="text-2xl text-black" />
+                ) : (
+                  <SlArrowDown className="text-2xl text-black" />
+                )}
+              </div>
+              {/* {eventStates.find((state) => state.id === item.id).showDescr ? ( */}
+              <div
+                className={`mt-5 ${
+                  expandedId === item.id
+                    ? "animate-dropdown"
+                    : "animate-pullback"
+                }`}
+              >
                 <div className="h-[2px] w-full bg-PrimaryColor mb-5" />
                 <p className="text-black text-left text-lg">
                   {item.description}
                 </p>
               </div>
-            ) : (
-              console.log("Statement is false")
-            )}
+
+              {/* )} */}
+            </div>
           </div>
-        </div>
-      ))}
-    </section>
-  );
+        ))}
+      </section>
+    );
+  };
 };
 
 export default ClubEvents;

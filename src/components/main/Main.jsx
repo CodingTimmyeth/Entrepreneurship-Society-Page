@@ -20,9 +20,13 @@ const Main = () => {
             entrepreneurial goals!
           </p>
           <div className="w-full ">
-            <button className="bg-PrimaryColor w-fit px-6 py-4 rounded-sm text-white">
+            <a
+              href="https://csusm.presence.io/organization/entrepreneurship-society"
+              className="bg-PrimaryColor w-fit px-6 py-4 rounded-sm text-white"
+              target="_blank"
+            >
               Join the Family!
-            </button>
+            </a>
           </div>
         </div>
       </div>
